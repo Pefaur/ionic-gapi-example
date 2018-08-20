@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Firebase Auth With Google Plus</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="isLoggedIn; else loginTemplate">
+    <h1>Welcome, {{displayName}}!</h1>
+    <p>Email: {{email}}<br>
+      Given Name: {{displayName}}</p>
+    <p>
+      <ion-avatar item-left>
+        <img src="{{photoURL}}">
+      </ion-avatar>
+    </p>
+    <p><button ion-button (click)="logout()">Logout From Google</button></p>
+  </div>
+
+  <ng-template #loginTemplate>
+    <p><button ion-button (click)="loginWithGoogle()">Login With Google</button></p>
+  </ng-template>
+</ion-content>

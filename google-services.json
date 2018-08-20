@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "49577853171",
+    "firebase_url": "https://vivo-test-42018.firebaseio.com",
+    "project_id": "vivo-test-42018",
+    "storage_bucket": "vivo-test-42018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49577853171:android:ba74cea513e29275",
+        "android_client_info": {
+          "package_name": "cl.duoc.vivotest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49577853171-bk7eormcshed56hs935bbsv49p24c397.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.duoc.vivotest",
+            "certificate_hash": "6f6c8be276be14bc7c2cd23d533baf84b0bf91ba"
+          }
+        },
+        {
+          "client_id": "49577853171-g7kct8699i6spq30afatntpiqv0v98rn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD38MViWOtvnXXiLUTvDvoCZw-KoWPFwe0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49577853171-g7kct8699i6spq30afatntpiqv0v98rn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
