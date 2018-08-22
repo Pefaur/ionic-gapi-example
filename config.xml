@@ -3,7 +3,7 @@
     <name>GAPI Ionic</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://192.168.1.82:8105" />
+    <content original-src="index.html" src="http://192.168.1.82:8107" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -106,5 +106,7 @@
     <allow-navigation href="http://192.168.1.82:8103" />
     <allow-navigation href="http://192.168.1.82:8104" />
     <allow-navigation href="http://192.168.1.82:8105" />
+    <allow-navigation href="http://192.168.1.82:8106" />
+    <allow-navigation href="http://192.168.1.82:8107" />
     <engine name="android" spec="7.0.0" />
 </widget>
