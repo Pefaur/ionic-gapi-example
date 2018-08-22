@@ -8,7 +8,8 @@ import { HomePage } from '../pages/home/home';
 import {GooglePlus} from "@ionic-native/google-plus";
 import {GoogleProvider} from "../providers/google/google";
 import {HttpClientModule} from "@angular/common/http";
-import {IonicStorageModule} from "@ionic/storage";
+import {NativeStorage} from "@ionic-native/native-storage";
+
 
 @NgModule({
   declarations: [
@@ -18,8 +19,7 @@ import {IonicStorageModule} from "@ionic/storage";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule,
-    IonicStorageModule.forRoot()
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -31,7 +31,8 @@ import {IonicStorageModule} from "@ionic/storage";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     GooglePlus,
-    GoogleProvider
+    GoogleProvider,
+    NativeStorage
   ]
 })
 export class AppModule {}

@@ -4,16 +4,16 @@ import { environment as ENV } from '../../environments/environment';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/observable/fromPromise';
-import {Storage} from "@ionic/storage";
+import {NativeStorage} from "@ionic-native/native-storage";
 
 @Injectable()
 export class BaseProvider {
 
-  constructor(public http: HttpClient, public storage: Storage) {}
+  constructor(public http: HttpClient, public storage: NativeStorage) {}
 
   /** get token */
   private getAuthToken() {
-    return Observable.fromPromise(this.storage.get(ENV.STORAGE.TOKEN));
+    return Observable.fromPromise(this.storage.getItem(ENV.STORAGE.TOKEN));
   }
 
   /** GET */

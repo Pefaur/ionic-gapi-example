@@ -7,7 +7,7 @@ $ npm i
 ```
 
 ### Use AccessToken to authenticate the Google REST API
-#####Add authorization header:
+##### Add authorization header:
 
 ```bash
 Authorization:  Bearer 'ACCESS_TOKEN'
@@ -20,7 +20,7 @@ Authorization: Bearer 'ACCESS_TOKEN'
 x-referer: http://localhost
 Origin: http://localhost:8080
 ```
-<font color="red">**IMPORTANT:** calls must be from the server, because we did not implement the OPTIONS method in Google Api Rest</font>
+**IMPORTANT:** calls must be from the server, because they did not implement the OPTIONS method in Google Api Rest
 
 
 

@@ -3,16 +3,16 @@ import {GooglePlus} from "@ionic-native/google-plus";
 import firebase from 'firebase/app';
 import {BaseProvider} from "../base/base";
 import {HttpClient} from "@angular/common/http";
-import {Storage} from "@ionic/storage";
 import { environment as ENV } from '../../environments/environment';
 import {Subject} from "rxjs";
+import {NativeStorage} from "@ionic-native/native-storage";
 
 @Injectable()
 export class GoogleProvider extends BaseProvider{
 
   constructor(public googlePlus: GooglePlus,
               public http: HttpClient,
-              public storage: Storage) {
+              public storage: NativeStorage) {
     super(http, storage);
   }
 
@@ -25,7 +25,7 @@ export class GoogleProvider extends BaseProvider{
         'force': true
       }).then(
         res => {
-          this.storage.set(ENV.STORAGE.TOKEN, res.accessToken).then(
+          this.storage.setItem(ENV.STORAGE.TOKEN, res.accessToken).then(
             success => subject.next(res),
             error => subject.error(error)
           )
