@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="cl.duoc.vivotest" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>ionicGmailFirebase</name>
+    <name>GAPI Ionic</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.1.82:8101" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -92,7 +92,6 @@
     <allow-navigation href="http://192.168.1.81:8105" />
     <allow-navigation href="http://192.168.1.81:8106" />
     <allow-navigation href="http://192.168.1.81:8107" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
     <allow-navigation href="http://192.168.1.81:8108" />
     <allow-navigation href="http://192.168.1.81:8109" />
     <allow-navigation href="http://192.168.1.81:8110" />
@@ -100,5 +99,7 @@
     <allow-navigation href="http://10.12.48.186:8112" />
     <allow-navigation href="http://10.12.48.186:8100" />
     <allow-navigation href="http://10.12.48.186:8102" />
+    <allow-navigation href="http://192.168.1.82:8100" />
+    <allow-navigation href="http://192.168.1.82:8101" />
     <engine name="android" spec="7.0.0" />
 </widget>

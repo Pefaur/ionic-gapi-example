@@ -1,3 +1,25 @@
 page-home {
 
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 10px 0px 10px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 10px 30px 10px;
+  }
+  .notice {
+    background-color: #2ec95c;
+    color: #fff;
+    display: block;
+    margin: 10px;
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }

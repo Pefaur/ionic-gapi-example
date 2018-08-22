@@ -3,12 +3,12 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { AuthProvider } from '../providers/auth/auth';
 import {GooglePlus} from "@ionic-native/google-plus";
-import {InAppBrowser} from "@ionic-native/in-app-browser";
+import {GoogleProvider} from "../providers/google/google";
+import {HttpClientModule} from "@angular/common/http";
+import {IonicStorageModule} from "@ionic/storage";
 
 @NgModule({
   declarations: [
@@ -17,7 +17,9 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -28,10 +30,8 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider,
     GooglePlus,
-    InAppBrowser
-
+    GoogleProvider
   ]
 })
 export class AppModule {}
